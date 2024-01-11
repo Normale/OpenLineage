@@ -2,6 +2,9 @@
 
 ## [Unreleased](https://github.com/OpenLineage/OpenLineage/compare/1.8.0...HEAD)
 
+* **Spark: integration now emits intermediate, application level events wrapping entire job execution** [`#1672`](https://github.com/OpenLineage/OpenLineage/issues/1672) [@mobuchowski](https://github.com/mobuchowski)  
+    *Previously, Spark event model described only single actions, potentially linked only to some parent run.
+
 ## [1.8.0](https://github.com/OpenLineage/OpenLineage/compare/1.7.0...1.8.0) - 2024-01-19
 
 * **Flink: support Flink 1.18** [`#2366`](https://github.com/OpenLineage/OpenLineage/pull/2366) [@HuangZhenQiu](https://github.com/HuangZhenQiu)  
