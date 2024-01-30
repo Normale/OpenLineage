@@ -1,5 +1,5 @@
 /*
-/* Copyright 2018-2023 contributors to the OpenLineage project
+/* Copyright 2018-2024 contributors to the OpenLineage project
 /* SPDX-License-Identifier: Apache-2.0
 */
 
@@ -50,7 +50,7 @@ public class CassandraSinkVisitor extends Visitor<OpenLineage.OutputDataset> {
   @Override
   public List<OpenLineage.OutputDataset> apply(Object object) {
     log.debug("Apply sink {} in CassandraSinkVisitor", object);
-    CassandraSinkWrapper sinkWrapper = null;
+    CassandraSinkWrapper sinkWrapper;
     if (object instanceof RichOutputFormat) {
       sinkWrapper = createWrapperForOutputFormat(object);
     } else {
